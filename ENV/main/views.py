@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from .models import Day
 
 def index(request):
     return render(request, 'index.html')
@@ -47,8 +48,18 @@ def logout(request):
     return redirect('/')
 
 @login_required(login_url='login')
-def log(request):
-    return render(request, 'log.html')
+def survey(request):
+    if request.method == "POST":
+        water = request.POST['water']
+        trash = request.POST['trash']
+        co2 = request.POST['co2']
+        energy = request.POST['energy']
+        current_user = request.user
+
+        new_day = Day.objects.create(user = current_user, trash=trash, water=water,co2=co2,energy=energy)
+        new_day.save()
+        return redirect('stats')
+    return render(request, 'survey.html')
 
 @login_required(login_url='login')
 def stats(request):

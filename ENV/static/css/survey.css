@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding-top: 1%;
+    margin-top: 1%;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    width: fit-content;
+}
+
+header {
+    background-color: green;
+    color: gray;
+    padding: 10px;
+}
+
+
+
+.survey {
+    width: 40%;
+    margin: 2% auto;
+    background: #404040;
+    color: white;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.514);
+}
+
+.survey h3 {
+    margin: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.survey li {
+    margin: 10px;
+    cursor: pointer;
+    padding: 4px;
+    margin: 0 auto;
+}
+
+.survey li:hover {
+    background: cornflowerblue;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
+    transition: 0.3 ease;
+}
+
+.end {
+    background:  #404040;
+    color: white;
+    width: 80%;
+    margin: 3% auto;
+    padding: 20px 0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
+}
+
+.end h1 {
+    margin: 5px;
+}
+
+.end p {
+    padding: 10px;
+}
+
+.end a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 4px;
+    background: cornflowerblue;
+    ;
+
+    outline: none;
+}
+
+.end a:hover {
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+/* Display Change Properties*/
+
+.q1 {
+    display: block;
+}
+
+.q2{
+    display: none;
+}
+
+.q3{
+    display: none;
+}
+
+.q4{
+    display: none;
+}
+
+.q5{
+    display: none;
+}
+
+.q6{
+    display: none;
+}
+
+.q7{
+    display: none;
+}
+
+.q8{
+    display: none;
+}
+
+.end{
+    display: none;
+}
+
+.buttonsub {
+    display: inline-block;
+    width: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: black;
+    font-size: 30px  ;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Genki desu demo', sans-serif;
+}
