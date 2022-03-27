@@ -192,7 +192,8 @@ img {
 .heading-4 {
   margin-top: 1%;
   margin-bottom: 0px;
-  padding: 1% 2%;
+  margin-left: auto;
+  margin-right: auto;
   outline-color: #333;
   outline-offset: 0px;
   outline-style: solid;
