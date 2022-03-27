@@ -63,4 +63,5 @@ def survey(request):
 
 @login_required(login_url='login')
 def stats(request):
-    return render(request, 'stats.html')
+    day = Day.objects.get(user=request.user)
+    return render(request, 'stats.html',{'day': day})

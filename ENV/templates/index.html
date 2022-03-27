@@ -47,16 +47,16 @@
   <div class="section-2 wf-section">
     <div class="square-holder">
       <div class="square">
-        <p class="paragraph">Garbage is bad when u use lots of it :(</p>
+        <p class="paragraph">The largest sources of waste for the average American is food debris, followed by plastic</p>
       </div>
       <div class="square">
-        <p class="paragraph">CO2 is bad when u use lots of it :(</p>
+        <p class="paragraph">The average American's room can reach CO2 levels of over 1000 ppm which lead to reduced cognitive function</p>
       </div>
       <div class="square">
-        <p class="paragraph">Energy is bad when u use lots of it :(</p>
+        <p class="paragraph">Having led light bulbs instead of incandescent ones can reduce your energy needs by over 50%</p>
       </div>
       <div class="square">
-        <p class="paragraph">Water is bad when u use lots of it :(</p>
+        <p class="paragraph">the highest consumer of water for the average american is toilet flushing!!</p>
       </div>
     </div>
     <div class="square-holder blockfront">
@@ -76,9 +76,10 @@
   </div>
   <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
     <div class="mask w-slider-mask">
-      <div class="slide-map w-slide"></div>
-      <div class="slide-map w-slide"></div>
-      <div class="slide-map w-slide"></div>
+      <div class="slide-map w-slide">{% include "solidwaste.html" %}</div>
+      <div class="slide-map w-slide">{% include "finalco2.html" %}</div>
+      <div class="slide-map w-slide">{% include "Energy.html" %}</div>
+      <div class="slide-map w-slide">{% include "Water.html" %}</div>
     </div>
     <div class="back w-slider-arrow-left">
       <a href="#" class="back-button button">BACK</a>
