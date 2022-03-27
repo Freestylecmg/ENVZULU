@@ -185,15 +185,15 @@ img {
 .section {
   margin-top: 40px;
   margin-bottom: 40px;
-  padding-right: 137px;
-  padding-left: 137px;
 }
 
 .heading-4 {
   margin-top: 1%;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
   outline-color: #333;
   outline-offset: 0px;
   outline-style: solid;
